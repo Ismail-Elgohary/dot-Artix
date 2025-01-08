@@ -1,7 +1,0 @@
-#!/bin/sh
-
-browserdir="$HOME/.mozilla/firefox"
-profile="$(sed -n "/Default=.*\..*/s/.*=//p" "$browserdir/profiles.ini")"
-
-lz4jsoncat "$browserdir/$profile/sessionstore-backups/recovery.jsonlz4" |
-	jq -r '.windows[].tabs[] | .entries[.index-1] | "\(.title) (\(.url))"'
