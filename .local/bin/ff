@@ -1,0 +1,25 @@
+#!/bin/sh
+
+for arg; do
+	case "$arg" in
+		-m[0-9])
+			maxdepth="${arg#-m}"
+			;;
+		-t[bcdpflsD])
+			[ "$type" ] && type="$type,${arg#-t}" || type="${arg#-t}"
+			;;
+		*)
+			[ "$name" ] && dir="$name"
+			name="$arg"
+			;;
+	esac
+done
+
+set -- "${dir:-.}" \
+	${maxdepth:+-maxdepth $maxdepth} \
+	${type:+-type "$type"} \
+	"(" ! -path "*.git*" -o -name ".gitignore" -o -name ".gitmodules" ")" \
+	${name:+-iname "*$name*"} \
+	-printf "%P\n"
+
+find "$@"
