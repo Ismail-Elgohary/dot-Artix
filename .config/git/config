@@ -6,11 +6,9 @@
 	pager = delta
 
 [user]
-	name = Osama Ragab
-	email = theosamaragab@gmail.com
-	#signingkey = 4F5D73863FBDBED9
-	signingkey = ~/.ssh/id_ed25519.pub
-
+	name = Ismail-Elgohary
+	email = ismailelgohary173@gmail.com
+	sigingkey= ~/.ssh/id_ed25519.pub
 [gpg]
 	format = ssh
 
@@ -28,13 +26,11 @@
 	autoStash = true
 
 [alias]
-	co = checkout
-	cm = commit -m
-	st = status -sb
-	br = branch
-	cl = clone
-	dt = difftool
-	wt = worktree
+	gco = checkout
+	gm = commit -m
+	gst = status -sb
+	gbr = branch
+	gl = clone
 	ls = ls-files
 	tree = ls-tree --full-tree -r HEAD
 	logg = log --oneline --graph --decorate
