@@ -1,5 +1,20 @@
 #!/bin/sh
 
+
+alias xi="doas pacman -S"
+alias u="doas pacman -Syu"
+
+
+
+
+
+
+
+
+
+
+
+
 alias e="${EDITOR: -vi }"
 alias q="exit"
 alias c="clear"
@@ -23,10 +38,13 @@ alias gst="git status -sb"
 alias gph="git push"
 alias gpl="git pull"
 alias gdf="git diff"
+alias gm="git commit -m"
+alias gd="git add ."
+alias gl="git clone"
 
 
 alias dcz="e $HOME/dotfiles/.config/zsh/.zshrc"
 alias dcff="e $HOME/dotfiles/.config/foot/foot.ini"
 alias dcr="e $HOME/dotfiles/.config/river/init"
 alias dcsa="e $HOME/dotfiles/.config/shell/aliasrc"
-
+alias bkm="./dotfiles/.local/bin/notes"

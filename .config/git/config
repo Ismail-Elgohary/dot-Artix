@@ -25,17 +25,6 @@
 [rebase]
 	autoStash = true
 
-[alias]
-	gco = checkout
-	gm = git commit -m ""
-	gst = status -sb
-	gbr = branch
-	gl = clone
-	ls = ls-files
-	tree = ls-tree --full-tree -r HEAD
-	logg = log --oneline --graph --decorate
-	undo = reset --soft HEAD^
-
 [delta]
 	tabs = 4
 	side-by-side = false
