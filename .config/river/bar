@@ -7,12 +7,12 @@ mkfifo "$FIFO"
 while cat "$FIFO"; do :; done | sandbar \
 	-font "monospace:size=12:weight=bold" \
 	-active-fg-color "#eceff4" \
-	-active-bg-color "#5e81ac" \
+	-active-bg-color "000000" \
 	-inactive-fg-color "#eceff4" \
-	-inactive-bg-color "#2e3440" \
+	-inactive-bg-color "000000" \
 	-urgent-fg-color "#eceff4" \
-	-urgent-bg-color "#b74e58" \
+	-urgent-bg-color "000000" \
 	-title-fg-color "#eceff4" \
-	-title-bg-color "#2e3440" \
+	-title-bg-color "000000" \
 	-hide-vacant-tags \
 	-no-title
