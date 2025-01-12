@@ -1,14 +1,8 @@
 #!/bin/sh
 
 
-alias xi="doas pacman -S"
+alias xi="sudo pacman -S"
 alias u="doas pacman -Syu"
-
-
-
-
-
-
 
 
 
