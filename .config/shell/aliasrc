@@ -4,11 +4,6 @@
 alias xi="sudo pacman -S"
 alias u="doas pacman -Syu"
 
-
-
-
-
-
 alias e="${EDITOR: -vi }"
 alias q="exit"
 alias c="clear"
@@ -42,3 +37,4 @@ alias dcff="e $HOME/dotfiles/.config/foot/foot.ini"
 alias dcr="e $HOME/dotfiles/.config/river/init"
 alias dcsa="e $HOME/dotfiles/.config/shell/aliasrc"
 alias bkm="./dotfiles/.local/bin/notes"
+alias dcn="cd $HOME/dotfiles/.config/nvim"
