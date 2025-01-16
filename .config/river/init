@@ -104,6 +104,7 @@ pidof -qsx sandbar || {
 
 [ -s "$XDG_DATA_HOME/bg" ] && run wbg "$XDG_DATA_HOME/bg"
 
+
 run foot --server
 run kanshi
 run pipewire
