@@ -14,7 +14,6 @@ fi
 echo "setting up dotfiles"
 "$HERE/setup" dotfiles || { echo "setup dotfiles failed" >&2; exit 1; }
 
-alias pkginst="doas pacman -Sq --needed --noconfirm"
 alias aurinst="paru -Sq --needed --noconfirm"
 
 echo "updating repos and packages"
@@ -62,7 +61,7 @@ pkginst ffmpeg imagemagick poppler perl-image-exiftool mat2 qpdf gimp sox mpv mp
 aurinst sioyek cava
 
 echo "installing email tools"
-pkginst neomutt isync msmtp notmuch gettext
+pkginst neomutt isync msmtp notmuch gettext thunderbird
 aurinst abook
 
 echo "installing system monitoring tools"

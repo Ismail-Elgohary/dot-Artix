@@ -102,7 +102,7 @@ pidof -qsx sandbar || {
 	riverctl spawn "$XDG_CONFIG_HOME/river/status"
 }
 
-[ -s "$XDG_DATA_HOME/bg" ] && run wbg "$XDG_DATA_HOME/bg"
+[ -s "$XDG_DATA_HOME/wall" ] && run wbg "$XDG_DATA_HOME/wall"
 
 
 run foot --server

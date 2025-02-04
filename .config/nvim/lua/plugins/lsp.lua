@@ -1,5 +1,3 @@
-local format_group = vim.api.nvim_create_augroup("LspFormat", {})
-
 return {
 	"williamboman/mason.nvim",
 	build = ":MasonUpdate",
@@ -22,6 +20,7 @@ return {
 				"gopls",
 				"pyright",
 				"tsserver",
+				"ts_ls",
 				"lua_ls",
 			},
 			handlers = {
@@ -114,12 +113,8 @@ return {
 			virtual_text = true,
 			update_in_insert = true,
 			float = {
-				focusable = false,
-				style = "minimal",
 				border = "rounded",
-				source = "always",
-				header = "",
-				prefix = "",
+				source = true,
 			},
 		})
 	end,
