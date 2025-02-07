@@ -17,6 +17,7 @@ return {
 				ensure_installed = { "c", "zig", "rust", "go", "python", "lua", "bash", "org", "vimdoc" },
 			})
 			require("treesitter-context").setup({ max_lines = 5 })
+			vim.wo.foldexpr ='v:lua.vim.treesitter.foldexpr()'
 		end,
 	},
 }

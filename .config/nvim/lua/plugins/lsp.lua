@@ -107,6 +107,7 @@ return {
 				vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 				vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, opts)
 			end
+
 		})
 
 		vim.diagnostic.config({
