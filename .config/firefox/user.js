@@ -8,6 +8,7 @@ user_pref("privacy.resistFingerprinting", false);
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 user_pref("network.http.referer.XOriginPolicy", 0);
 user_pref("dom.security.https_only_mode", false);
+user_pref("browser.search.suggest.enabled", true);
 user_pref("webgl.disabled", false);
 user_pref("gfx.webrender.all", true);
 user_pref("media.eme.enabled", true);
