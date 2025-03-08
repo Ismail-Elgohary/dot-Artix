@@ -97,6 +97,8 @@ rivertile -view-padding 4 -outer-padding 4 &
 
 dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
 pidof -qsx sandbar || {
 	riverctl spawn "$XDG_CONFIG_HOME/river/bar"
 	riverctl spawn "$XDG_CONFIG_HOME/river/status"
