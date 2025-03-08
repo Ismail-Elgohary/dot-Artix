@@ -10,7 +10,7 @@ vim.keymap.set("n", "<C-d>",  "<C-d>zz")  --  end page
 vim.keymap.set("n", "<C-u>",  "<C-u>zz")  --  first page
 
 
--- to move lines 
+-- to move lines
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv") -- move line down(v)
 vim.keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
 vim.keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)

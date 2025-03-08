@@ -1,6 +1,6 @@
 #!/bin/sh
-
-NOTESDIR="${NOTESDIR:-$(xdg-user-dir docs)/notes}"
+NOTE_FILE="$NOTESDIR/notes.txt"
+NOTESDIR="${NOTESDIR:-$(xdg-user-dir)/notes}"
 [ -d "$NOTESDIR" ] || mkdir -p "$NOTESDIR" || { echo "$(basename "$0"): can't create dir $NOTESDIR" >&2; exit 1; }
 cd "$NOTESDIR" || { echo "$(basename "$0"): can't cd to $NOTESDIR" >&2; exit 1; }
 
@@ -31,6 +31,8 @@ case "$1" in
 						$EDITOR "$NOTESDIR/$f.md"
 					elif [ -f "$NOTESDIR/$f.txt" ]; then
 						$EDITOR "$NOTESDIR/$f.txt"
+						elif [ -f "$NOTESDIR/$f.todo.txt" ]; then
+					     	$EDITOR "$NOTESDIR/$f.todo.txt"
 					else
 						$EDITOR "$NOTESDIR/$f"
 					fi
