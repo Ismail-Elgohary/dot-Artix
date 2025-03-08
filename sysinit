@@ -24,7 +24,7 @@ pkginst linux-firmware mesa
 
 echo "installing wayland tools"
 pkginst river foot foot-terminfo kanshi fuzzel mako swayidle wlopm waylock wl-clipboard grim slurp wf-recorder wev
-aurinst sandbar poweralertd wbg clipman zk
+aurinst sandbar poweralertd wbg clipman
 
 echo "installing login management tools"
 pkginst elogind pam_rundir
