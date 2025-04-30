@@ -83,7 +83,7 @@ bindkey -s "^s" '"$(fzf)"\n'
 bindkey -s "^f" '^ue "$(fzf)"\n'
 bindkey -s "^o" '^uxdg-open "$(fzf)"\n'
 bindkey -s "^g" '^ucd "$(dirname "$(fzf)")"\n'
-bindkey -s "^t" '^u[ -f TODO.md ] && $EDITOR TODO.md || notes todo\n'
+bindkey -s "^t" '^u[ -f TODO.md ] && $EDITOR TODO.md || notes links\n'
 
 ZSHPLUGINSDIR="${ZSHPLUGINSDIR:-/usr/share/zsh/plugins}"
 if [ -r "$ZSHPLUGINSDIR/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
