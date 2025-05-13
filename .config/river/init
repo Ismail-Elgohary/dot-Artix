@@ -118,3 +118,4 @@ run playerctld daemon
 run syncthing serve --no-browser
 pidof -qsx mpd || (mpd && mpd-mpris) &
 run wl-paste -t text -w clipman store -P
+brightnessctl set 85%
