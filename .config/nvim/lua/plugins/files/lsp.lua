@@ -101,7 +101,7 @@ return {
 				vim.keymap.set("n", "<leader>aj", vim.diagnostic.goto_prev, opts)
 				vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 				vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-				vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, opts)
+					vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, opts)
 			end
 
 		})
