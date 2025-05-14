@@ -134,6 +134,7 @@ opendoas
 openssh
 openssh-runit
 os-prober
+obs-studio
 pacman-contrib
 pam_rundir
 pam_ssh
@@ -161,6 +162,7 @@ python-adblock
 python-pip
 python-pipenv
 python-pipx
+pavucontrol
 qpdf
 qrencode
 qutebrowser
