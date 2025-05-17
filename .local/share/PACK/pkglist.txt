@@ -135,6 +135,7 @@ openssh
 openssh-runit
 os-prober
 obs-studio
+otf-font-awesome
 pacman-contrib
 pam_rundir
 pam_ssh
@@ -212,6 +213,9 @@ translate-shell
 transmission-cli
 ttf-amiri
 ttf-dejavu
+ttf-dejavu-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 typst
 ufw
 ufw-runit
@@ -242,6 +246,7 @@ wlopm
 wpa_supplicant
 wpa_supplicant-runit
 wrk
+waybar
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
