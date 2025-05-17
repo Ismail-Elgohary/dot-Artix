@@ -41,7 +41,7 @@ for i in $(seq 1 9); do
 	riverctl map normal Super+Shift+Control "$i" toggle-view-tags $tags
 done
 
-riverctl map normal Super Return spawn "$TERMINAL"
+riverctl map normal Super Return spawn "ghostty"
 riverctl map normal Super R spawn "fuzzel"
 riverctl map normal Super+Shift q spawn "menu-sysact"
 riverctl map normal None Print spawn "menu-screenshot"
