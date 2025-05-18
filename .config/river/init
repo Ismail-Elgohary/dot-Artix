@@ -99,10 +99,10 @@ dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 
-pidof -qsx sandbar || {
-	riverctl spawn "$XDG_CONFIG_HOME/river/bar"
-	riverctl spawn "$XDG_CONFIG_HOME/river/status"
-}
+#pidof -qsx sandbar || {
+	#riverctl spawn "$XDG_CONFIG_HOME/river/bar"
+	#riverctl spawn "$XDG_CONFIG_HOME/river/status"
+#}
 
 [ -s "$XDG_DATA_HOME/wall" ] && run wbg "$XDG_DATA_HOME/wall"
 
