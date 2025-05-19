@@ -106,13 +106,47 @@ return {
 
 		})
 
-		vim.diagnostic.config({
-			virtual_text = true,
-			update_in_insert = true,
-			float = {
-				border = "rounded",
-				source = true,
-			},
-		})
-	end,
+_G.shift_k_enabled = false
+vim.api.nvim_create_augroup("LspGroup", {})
+
+vim.api.nvim_create_autocmd("CursorHold", {
+    group = "LspGroup",
+    callback = function()
+        if not _G.shift_k_enabled then
+            vim.diagnostic.open_float(nil, {
+                scope = "cursor",
+                focusable = true,
+                close_events = {
+                    "CursorMoved",
+                    "CursorMovedI",
+                    "BufHidden",
+                    "InsertCharPre",
+                    "WinLeave",
+                  },
+            })
+        end
+    end,
+    desc = "Show diagnostic error info on CursorHold"
+})
+vim.api.nvim_create_autocmd({"CursorMoved", "BufEnter"}, {
+    callback = function()
+        _G.shift_k_enabled = false
+    end
+})
+function _G.show_docs()
+    _G.shift_k_enabled = true
+    vim.api.nvim_command("doautocmd CursorMovedI") -- Run autocmd to close diagnostic window if already open
+
+    local cw = vim.fn.expand('<cword>')
+    if vim.fn.index({'vim', 'help'}, vim.bo.filetype) >= 0 then
+        vim.api.nvim_command('h ' .. cw)
+    else
+        --vim.lsp.buf.hover() -- use if you want to use builtin LSP hover
+        vim.api.nvim_command("Lspsaga hover_doc")
+    end
+end
+
+vim.keymap.set("n", "K",  _G.show_docs, {noremap = true, silent = true})
+
+			end,
 }
