@@ -69,6 +69,7 @@ highlight
 htop-vim
 hwinfo
 hyperfine
+hyprlock
 iftop
 ifuse
 imv
