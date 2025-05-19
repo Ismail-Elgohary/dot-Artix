@@ -1,3 +1,4 @@
+7zip
 abiword
 alsa-utils
 amfora
@@ -17,9 +18,9 @@ bluez
 bluez-runit
 bluez-utils
 brightnessctl
+btop
 buku
 bun-bin
-btop
 calcurse
 cava
 chrony
@@ -41,6 +42,7 @@ dive
 docker
 docker-compose
 docker-runit
+dpkg
 dragon-drop
 duf
 efibootmgr
@@ -52,6 +54,7 @@ fd
 firefox
 firejail
 flatpak
+flyctl-bin
 foot
 foot-terminfo
 fuzzel
@@ -65,11 +68,11 @@ gnome-epub-thumbnailer
 grim
 grub
 gtk4
+gtklock
 highlight
 htop-vim
 hwinfo
 hyperfine
-hyprlock
 iftop
 ifuse
 imv
@@ -129,13 +132,13 @@ noto-fonts-emoji
 npm
 ntfs-3g
 nvtop
+obs-studio
 obsidian
 openbsd-netcat
 opendoas
 openssh
 openssh-runit
 os-prober
-obs-studio
 otf-font-awesome
 pacman-contrib
 pam_rundir
@@ -144,6 +147,7 @@ pandoc-bin
 paru
 pass
 pass-otp
+pavucontrol
 pdfjs
 perl-image-exiftool
 pipewire
@@ -164,7 +168,7 @@ python-adblock
 python-pip
 python-pipenv
 python-pipx
-pavucontrol
+python-pycryptodome
 qpdf
 qrencode
 qutebrowser
@@ -189,13 +193,15 @@ socklog
 sound-theme-freedesktop
 source-highlight
 sox
-spyder
 sqlmap
+srm
 sshfs
 staticcheck
 strace
+swaybg
 swayidle
 syncthing
+systemctl-tui
 tcc
 tealdeer
 telegram-desktop
@@ -230,8 +236,8 @@ vi
 vim
 vsv
 w3m
+waybar
 wayland-utils
-waylock
 wayprompt
 wbg
 websocat
@@ -244,10 +250,11 @@ wireplumber
 wireshark-cli
 wl-clipboard
 wlopm
+wlr-randr
 wpa_supplicant
 wpa_supplicant-runit
 wrk
-waybar
+xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
