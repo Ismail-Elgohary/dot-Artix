@@ -54,7 +54,6 @@ fd
 firefox
 firejail
 flatpak
-flyctl-bin
 foot
 foot-terminfo
 fuzzel
@@ -82,7 +81,6 @@ jq
 julia
 jupyterlab
 kanshi
-keepassxc
 kvantum
 ldns
 less
