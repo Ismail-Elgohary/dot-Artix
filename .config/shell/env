@@ -57,11 +57,13 @@ export SQLITE_HISTORY="$XDG_STATE_HOME/sqlite_history"
 export ARDUINO_DIRECTORIES_DATA="$XDG_DATA_HOME/arduino"
 export ARDUINO_DIRECTORIES_DOWNLOADS="$ARDUINO_DIRECTORIES_DATA/staging"
 export ARDUINO_DIRECTORIES_USER="$ARDUINO_DIRECTORIES_DATA/user"
+export ZIGPATH="$XDG_CONFIG_HOME/.zig"
+
 export PATH="$HOME/.local/bin:$CARGO_HOME/bin:$GOPATH/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:$PATH"
+
 export SSH_ASKPASS="wayprompt-ssh-askpass"
 export SUDO_ASKPASS="wayprompt-ssh-askpass"
-export ZIGPATH="$HOME/.zig"
-export HAYPRPATH="$XDG_CONFIG_HOME/hypr/hyperlock.conf"
+
 export LESS="-R"
 export MANPAGER="less -R --use-color -Dd+b -Duc"
 export MANROFFOPT="-P -c"

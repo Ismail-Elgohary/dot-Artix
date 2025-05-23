@@ -1,6 +1,6 @@
 #!/bin/sh
 NOTE_FILE="$NOTESDIR/notes.txt"
-NOTESDIR="${NOTESDIR:-$(xdg-user-dir)/notes}"
+NOTESDIR="${NOTESDIR:-$(xdg-user-dir)/personal/notes}"
 [ -d "$NOTESDIR" ] || mkdir -p "$NOTESDIR" || { echo "$(basename "$0"): can't create dir $NOTESDIR" >&2; exit 1; }
 cd "$NOTESDIR" || { echo "$(basename "$0"): can't cd to $NOTESDIR" >&2; exit 1; }
 
