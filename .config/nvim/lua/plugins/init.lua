@@ -13,4 +13,6 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.expand("~/.local/bin")
+
 require("lazy").setup("plugins.files")
