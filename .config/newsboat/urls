@@ -57,12 +57,10 @@ https://frontendmasters.com/blog/feed blog tech
 https://golangweekly.com/rss/ tech
 http://ithare.com/rssfeed/ blog tech
 https://www.openmymind.net/atom.xml blog tech
-https://www.techhut.tv/rss/ blog tech
 https://chomsky.info/feed/ blog tech
 https://syndication.thedailywtf.com/TheDailyWtf blog tech
 https://stackoverflow.blog/feed/ blog tech
 
-https://changelog.com/feed blog pod tech
 https://changelog.com/master/feed pod tech
 
 https://projecteuler.net/rss2_euler.xml ps
@@ -84,3 +82,10 @@ https://markmanson.net/feed blog
 https://adhdftw.com/feed/index.xml blog
 
 
+https://remysharp.com/feed.xml
+https://addyosmani.com/rss.xml
+https://kentcdodds.com/blog/rss.xml
+https://feeds.feedburner.com/philipwalton
+https://humanwhocodes.com/feeds/blog.xml
+https://overreacted.io/rss.xml
+https://christianheilmann.com/feed/
