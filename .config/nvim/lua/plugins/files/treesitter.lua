@@ -14,7 +14,7 @@ return {
 				highlight = {
 					enable = true,
 				},
-				ensure_installed = { "c", "zig", "javascript", "go", "python", "lua", "bash",  "vimdoc" },
+				ensure_installed = { "c", "zig", "javascript", "go", "python", "lua", "bash",  "vimdoc", "tsx", "typescript", "json" },
 			})
 			require("treesitter-context").setup({ max_lines = 5 })
 			vim.wo.foldexpr ='v:lua.vim.treesitter.foldexpr()'
