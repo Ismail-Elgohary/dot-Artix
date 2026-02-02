@@ -61,6 +61,7 @@ export ARDUINO_DIRECTORIES_USER="$ARDUINO_DIRECTORIES_DATA/user"
 export ZIGPATH="$XDG_CONFIG_HOME/.zig"
 
 export PATH="$HOME/.local/bin:$CARGO_HOME/bin:$GOPATH/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:$PATH"
+export PATH="$HOME/.local/share/npm/bin:$PATH"
 
 export SSH_ASKPASS="wayprompt-ssh-askpass"
 export SUDO_ASKPASS="wayprompt-ssh-askpass"

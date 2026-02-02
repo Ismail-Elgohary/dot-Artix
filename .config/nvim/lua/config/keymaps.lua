@@ -21,3 +21,8 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>f", function()
+    require("conform").format({ async = true })
+end)
+
+

@@ -2,10 +2,11 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
+		branch = 'master',
 		build = ":TSUpdate",
+		main = 'nvim-treesitter.config',
 		dependencies = {
 			{ "nvim-treesitter/nvim-treesitter-context" },
-			-- { "nvim-treesitter/playground" },
 		},
 		config = function()
 			require("nvim-treesitter.configs").setup({

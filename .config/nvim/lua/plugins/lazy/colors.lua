@@ -17,7 +17,6 @@ return {
         lazy = false,
         opts = {},
         config = function()
-            ColorMyPencils()
         end
     },
     {
@@ -52,6 +51,8 @@ return {
     },
     {
         "folke/tokyonight.nvim",
+		lazy = false,
+		opts = {},
         config = function()
             require("tokyonight").setup({
                 -- your configuration comes here
@@ -69,22 +70,8 @@ return {
                     floats = "dark", -- style for floating windows
                 },
             })
+            ColorMyPencils("tokyonight")
         end
     },
-
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        config = function()
-            require('rose-pine').setup({
-                disable_background = true,
-                styles = {
-                    italic = false,
-                },
-            })
-        end
-    },
-
-
 }
 
