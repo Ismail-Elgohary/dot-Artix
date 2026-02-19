@@ -10,7 +10,7 @@ alias c="clear"
 alias bm="buku --suggest"
 alias spf="sudo poweroff"
 alias dm="nmtui"
-
+alias za="zathura"
 
 alias mkd="mkdir -pv"
 alias cp="cp -iv"
