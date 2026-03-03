@@ -34,4 +34,4 @@ alias gl="git clone"
 #Files
 alias dcsa="e $HOME/dotfiles/.config/shell/aliasrc"
 alias dcn="cd $HOME/dotfiles/.config/nvim/lua/plugins/"
-alias pspf="cd  $HOME/personal/src/project/"
+alias ppc="cd $HOME/personal/src/project/Flx-Market/web-Flx/src/components/home/"

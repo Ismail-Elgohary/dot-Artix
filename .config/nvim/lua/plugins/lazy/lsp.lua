@@ -1,9 +1,9 @@
 return {
 	{
 		"williamboman/mason-lspconfig.nvim",
-		build = ":MasonUpdate",
+		build = ":Masonupdate",
 		dependencies = {
-			{ "williamboman/mason.nvim", opts = {}, build = ":MasonUpdate" },
+			{ "williamboman/mason.nvim", opts = {}, build = ":masonupdate" },
 			{ "neovim/nvim-lspconfig" },
 		},
 		config = function()
@@ -24,22 +24,26 @@ return {
 				},
 			})
 
-   vim.lsp.config("lua_ls", {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { "vim" }}}}})
-
+			vim.lsp.config("lua_ls", {
+				settings = {
+					lua = {
+						diagnostics = {
+							globals = { "vim" },
+						},
+					},
+				},
+			})
 
 			vim.lsp.config("*", {
 				capabilities = vim.lsp.protocol.make_client_capabilities(),
 				on_attach = function(_, bufnr)
 					local opts = { buffer = bufnr, remap = false }
+					vim.lsp.inlay_hint.enable(false)
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 					vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-					vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-					vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, opts)
+					vim.keymap.set("n", "k", vim.lsp.buf.hover, opts)
+					vim.keymap.set("i", "<c-k>", vim.lsp.buf.signature_help, opts)
 					vim.keymap.set("n", "<leader>ws", vim.lsp.buf.workspace_symbol, opts)
 					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 					vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
@@ -78,8 +82,8 @@ return {
 			vim.lsp.config("gopls", {
 				settings = {
 					gopls = {
-						completeUnimported = true,
-						usePlaceholders = true,
+						completeunimported = true,
+						useplaceholders = true,
 						staticcheck = true,
 						gofumpt = true,
 						analyses = {
@@ -93,15 +97,15 @@ return {
 
 			vim.lsp.config("ts_ls", {
 				init_options = {
-					maxTsServerMemory = 3 * 1024,
+					maxtsservermemory = 3 * 1024,
 					plugins = {
 						{
 							name = "@vue/typescript-plugin",
 							location = vim.fn.expand(
-								"$MASON/packages/vue-language-server/node_modules/@vue/language-server"
+								"$mason/packages/vue-language-server/node_modules/@vue/language-server"
 							),
 							languages = { "vue" },
-							configNamespace = "typescript",
+							confignamespace = "typescript",
 						},
 					},
 				},
@@ -112,7 +116,7 @@ return {
 				cmd = {
 					"arduino-language-server",
 					"-cli-config",
-					vim.fn.expand("$ARDUINO_DIRECTORIES_DATA/arduino-cli.yaml"),
+					vim.fn.expand("$arduino_directories_data/arduino-cli.yaml"),
 				},
 			})
 		end,
