@@ -25,4 +25,6 @@ vim.keymap.set("n", "<leader>f", function()
     require("conform").format({ async = true })
 end)
 
-
+      vim.keymap.set("i", "<C-Tab>", function()
+        supermaven.accept_suggestion()
+    end, { noremap = true, silent = true })

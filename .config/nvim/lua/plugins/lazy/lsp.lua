@@ -1,9 +1,9 @@
 return {
 	{
-		"williamboman/mason-lspconfig.nvim",
-		build = ":Masonupdate",
+	    "williamboman/mason-lspconfig.nvim",
+		build = ":MasonUpdate",
 		dependencies = {
-			{ "williamboman/mason.nvim", opts = {}, build = ":masonupdate" },
+			{ "williamboman/mason.nvim", opts = {}, build = ":MasonUpdate" },
 			{ "neovim/nvim-lspconfig" },
 		},
 		config = function()
@@ -21,16 +21,6 @@ return {
 					"ts_ls",
 					"lua_ls",
 					"phpactor",
-				},
-			})
-
-			vim.lsp.config("lua_ls", {
-				settings = {
-					lua = {
-						diagnostics = {
-							globals = { "vim" },
-						},
-					},
 				},
 			})
 
@@ -94,6 +84,34 @@ return {
 					},
 				},
 			})
+
+
+         vim.lsp.config("lua_ls", {
+				filetypes = { "lua" },
+				settings = {
+					Lua = {
+						telemetry = { enable = false },
+						codeLens = { enable = true },
+						hint = { enable = true },
+						runtime = {
+							version = jit and "LuaJIT" or _VERSION or "Lua 5.1",
+							pathStrict = true,
+							path = {
+								"lua/?.lua",
+								"lua/?/init.lua",
+							},
+						},
+						workspace = {
+							checkThirdParty = false,
+							library = {
+								vim.env.VIMRUNTIME,
+								"${3rd}/luv/library",
+							},
+						},
+					},
+				},
+			})
+
 
 			vim.lsp.config("ts_ls", {
 				init_options = {

@@ -1,0 +1,24 @@
+[global]
+
+origin = top-right
+offset = 20x40
+width = 300
+height = 90
+
+padding = 10
+horizontal_padding = 10
+text_icon_padding = 10
+
+icon_position = left
+max_icon_size = 32
+
+corner_radius = 8
+frame_width = 2
+
+font = Roboto 12
+
+markup = full
+format = "<b>%s</b>\n%b"
+
+show_age_threshold = 60
+word_wrap = yes
